@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açaí 😋</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: white;
+            border: 1px solid white;
+            padding: 15px;
+            font-size: 35px;
+            border-radius: 4px;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 50%;
+            border-radius: 10px;   
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 26px;
+            margin: 20px 0 10px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+        }
+
+        .project {
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 30px; 
+            background: linear-gradient(to top, #b795ed 0%, #9245A9 100%);
+            border-radius: 10px;
+            width: 50%;
+            box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;          
+        }
+
+        .out {
+            padding: 20px;
+            
+          
+        }
+
+        .learn-more {
+            display: block;
+            text-decoration: underline;
+            color: white;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+
+        button {
+            display: block;
+            margin: 40px auto;
+            background-color: #871b36;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 40px;
+            border: none;
+            transition: all 200ms ease;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            opacity: 1;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+        
+        .end-page {
+            text-align: center;
+            padding: 20px 30px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="out"> 
+    <div class="project"> 
+    <h1>I love Açaí</h1>
+    <h2>The best fruit of Brazil</h2>
+    <hr />
+    <img 
+    src = "https://blog.livup.com.br/wp-content/uploads/2020/01/acai.jpg"
+    alt = "Açaí image"
+    />
+    <hr />
+    <p> <span> 
+        The <strong>açaí</strong> berry is an inch-long, reddish-purple fruit. It comes from the açai palm tree, which is native to Central and
+        South America. Some studies show that açai fruit pulp is even richer in <em>antioxidants</em> than cranberries, raspberries,
+        blackberries, strawberries, or blueberries.
+        </span>
+    </p>
+    <br />
+    <small> 
+    <a href=" https://www.webmd.com/diet/acai-berries-and-acai-berry-juice-what-are-the-health-benefits#:~:text=The%20acai%20berry%20is%20an,blackberries%2C%20strawberries%2C%20or%20blueberries.""
+                target = " _blank" class="learn-more">
+        Learn more here
+    </a>
+    </small>
+    <button>
+     TRY AÇAÍ!
+    </button>
+    <p class="end-page"> 
+    This page was built by <strong> Samantha Oriá </strong>
+    </p>
+    </div>
+    </div>
+    <script>
+        function buyAcai() {
+                let name = prompt("What is your name?");
+                let email = prompt("What is your email?");
+
+                if(email.length) {
+                    alert(`Thank you, ${name}! We will be in touch by email! 😁`)
+                } else {
+                    alert(`Ooops! We need your email to send you the informations!`)
+                }
+            }
+            let buyButton = document.querySelector("button");
+
+           buyButton.addEventListener("click", buyAcai);
+    </script>
+</body>
+</html> 
